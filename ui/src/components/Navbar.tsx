@@ -13,11 +13,12 @@ export default function Navbar() {
   if (['/', '/auth'].includes(location.pathname)) return null;
 
   const links = [
-    { to: '/dashboard', label: 'Dashboard' },
-    { to: '/upload', label: 'Upload Docs' },
-    { to: '/report', label: 'Report' },
-    { to: '/centres', label: 'Centres' },
-  ];
+  { to: '/dashboard', label: 'Dashboard' },
+  { to: '/upload', label: 'Upload Docs' },
+  { to: '/report', label: 'Report' },
+  { to: '/schemes', label: 'Schemes' },
+  { to: '/centres', label: 'Centres' },
+];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 h-16 px-4 sm:px-6 flex items-center justify-between bg-[#f6f5f0]/90 dark:bg-navy-950/90 border-b border-slate-200 dark:border-white/10 backdrop-blur-xl">
