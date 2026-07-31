@@ -8,6 +8,7 @@ import Auth from './pages/Auth';
 import Dashboard from './pages/Dashboard';
 import Upload from './pages/Upload';
 import Report from './pages/Report';
+import Schemes from './pages/Schemes';
 import Guidance from './pages/Guidance';
 import NearbyCentres from './pages/NearbyCentres';
 import Settings from './pages/Settings';
@@ -46,6 +47,7 @@ function App() {
           <Route path="/upload" element={<ProtectedRoute><Upload /></ProtectedRoute>} />
           <Route path="/report/:id" element={<ProtectedRoute><Report /></ProtectedRoute>} />
           <Route path="/report" element={<ProtectedRoute><Report /></ProtectedRoute>} />
+          <Route path="/schemes" element={<Schemes />} />
           <Route path="/guidance/:id" element={<ProtectedRoute><Guidance /></ProtectedRoute>} />
           <Route path="/centres" element={<ProtectedRoute><NearbyCentres /></ProtectedRoute>} />
           <Route path="/centres/:analysisId" element={<ProtectedRoute><NearbyCentres /></ProtectedRoute>} />
